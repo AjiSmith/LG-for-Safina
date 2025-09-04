@@ -125,8 +125,10 @@
     })();
 
       (function(){
-    emailjs.init("8KD5im2Hi7VbaeZpU");
-     })();
+      emailjs.init({
+        publicKey: "8KD5im2Hi7VbaeZpU",
+      });
+
 
   document.getElementById("responForm").addEventListener("submit", function(event) {
     event.preventDefault();
@@ -143,3 +145,4 @@
         document.getElementById("status").innerText = "Gagal mengirim: " + JSON.stringify(error);
       });
   });
+
