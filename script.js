@@ -126,9 +126,7 @@
 
       (function(){
         if (!window.emailjs) { console.error('EmailJS SDK belum ter-load'); return; }
-      emailjs.init({
-        publicKey: "8KD5im2Hi7VbaeZpU",
-      });
+      emailjs.init({ publicKey: "8KD5im2Hi7VbaeZpU" });
 
 
   document.getElementById("responForm").addEventListener("submit", function(event) {
@@ -147,6 +145,7 @@
       });
   });
 })(); 
+
 
 
 
