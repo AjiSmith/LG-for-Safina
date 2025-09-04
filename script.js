@@ -125,11 +125,15 @@
     })();
 
   (function(){
-    if (!window.emailjs) { console.error('EmailJS SDK belum ter-load'); return; }
-    emailjs.init({ publicKey: "PASTE_YOUR_PUBLIC_KEY_HERE" });
-  })
+  if (!window.emailjs) { 
+    console.error('EmailJS SDK belum ter-load'); 
+    return; 
+  }
 
+  // Inisialisasi dengan PUBLIC KEY (string, bukan object)
+  emailjs.init("8KD5im2Hi7VbaeZpU");
 
+  // Handle submit form
   document.getElementById("responForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
@@ -145,10 +149,4 @@
         document.getElementById("status").innerText = "Gagal mengirim: " + JSON.stringify(error);
       });
   });
-})(); 
-
-
-
-
-
-
+})();
