@@ -124,9 +124,10 @@
       window.addEventListener('pointerdown', (e)=>{ spawnHeart(e.clientX, e.clientY); });
     })();
 
-      (function(){
-        if (!window.emailjs) { console.error('EmailJS SDK belum ter-load'); return; }
-      emailjs.init({ publicKey: "8KD5im2Hi7VbaeZpU" });
+  (function(){
+    if (!window.emailjs) { console.error('EmailJS SDK belum ter-load'); return; }
+    emailjs.init({ publicKey: "PASTE_YOUR_PUBLIC_KEY_HERE" });
+  })();
 
 
   document.getElementById("responForm").addEventListener("submit", function(event) {
@@ -145,6 +146,7 @@
       });
   });
 })(); 
+
 
 
 
