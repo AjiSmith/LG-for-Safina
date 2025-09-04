@@ -145,4 +145,6 @@
         document.getElementById("status").innerText = "Gagal mengirim: " + JSON.stringify(error);
       });
   });
+})(); 
+
 
