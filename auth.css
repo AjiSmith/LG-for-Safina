@@ -1,0 +1,105 @@
+#loginScreen {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  height: 100vh; width: 100vw;
+  background: radial-gradient(circle at top left, #0d1b2a, #000814);
+  overflow: hidden;
+  position: relative;
+}
+
+#loginScreen::before, #loginScreen::after {
+  content: "";
+  position: absolute;
+  width: 400px; height: 400px;
+  background: rgba(190,227,248,0.3);
+  border-radius: 50%;
+  filter: blur(120px);
+  animation: floaty 10s infinite alternate;
+}
+#loginScreen::after {
+  bottom: 10%; right: 10%;
+  background: rgba(167,216,240,0.3);
+}
+
+@keyframes floaty {
+  from { transform: translateY(0px); }
+  to { transform: translateY(-50px); }
+}
+
+.login-box {
+  position: relative;
+  background: rgba(0, 0, 0, 0.153);
+  border: 2px solid #8bd3ff;
+  border-radius: 20px;
+  padding: 30px;
+  width: 340px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 25px rgba(139,211,255,0.4);
+  text-align: center;
+  color: #fff;
+}
+
+.login-box h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  color: #BEE3F8;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px #8bd3ff;
+  position: relative;
+}
+
+.login-box h2::before {
+  content: "👑";
+  position: absolute;
+  top: -40px; left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.2rem;
+  animation: crownPulse 2s infinite;
+}
+@keyframes crownPulse {
+  0%,100% { transform: translateX(-50%) scale(1); }
+  50% { transform: translateX(-50%) scale(1.2); }
+}
+
+.login-box input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #31546b;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+.login-box input:focus {
+  border-color: #BEE3F8;
+  box-shadow: 0 0 10px #8bd3ff;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  color: #0d1b2a;
+  background: linear-gradient(90deg, #8bd3ff, #bee3f8);
+  box-shadow: 0 0 15px #8bd3ff;
+  transition: 0.3s;
+}
+.login-box button:hover {
+  background: linear-gradient(90deg, #bee3f8, #8bd3ff);
+  box-shadow: 0 0 25px #BEE3F8;
+}
+
+.error {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #ffb3c6;
+}

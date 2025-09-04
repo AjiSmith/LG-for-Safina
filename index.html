@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday 💙</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+</head>
+<body>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+
+  <header>
+    <h1 class="title">Happy Birthday, Princess Safina 💙</h1>
+    <p class="subtitle">Semoga ketika kamu ngeliat website ini hari-hari kamu penuh dengan kebahagiaan dan keberkahan yaa...</p>
+  </header>
+
+  <main class="center">
+
+    <section class="card" aria-live="polite">
+      <div class="badges" aria-hidden="true">
+        <span class="badge">💙 Warna Kesukaan Kamu</span>
+        <span class="badge">🎂 Kue Ulang Tahun untuk kamu</span>
+        <span class="badge">🌸 Bunga virtual</span>
+        <span class="badge">🌙 Bulan yang indah seperti senyumanmu</span>
+      </div>
+      <p id="typewriter" class="typewriter"></p>
+      <div class="cta-wrap">
+        <button id="giftBtn" class="btn" type="button">Special Birthday Web for Safina by Smith 💙</button>
+      </div>
+      <div class="divider"></div>
+      <p style="text-align:center; font-size:13px; opacity:.8">Maaf kalau belum sempurna, ini adalah hasil dari usahaku yang terbaik untuk My Lovely Princess.</p>
+    </section>
+
+    <section class="grid" aria-label="Pesan-pesan manis">
+        <!-- Kartu [0] -->
+      <article class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="face front">
+            <div class="icon">🎂</div>
+            <div class="tag">Kue Virtual untukmu</div>
+            <small>Klik kue'nya</small>
+          </div>
+          <div class="face back">
+            <p class="msg">Semoga setiap potongan kebahagiaan kamu selembut krim di atas kue ulang tahun ini.</p>
+          </div>
+        </div>
+      </article>
+      <!-- Kartu [1] -->
+      <article class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="face front">
+            <div class="icon">🌸</div>
+            <div class="tag">Bunga Virtual</div>
+            <small>Klik deh bunga'nya</small>
+          </div>
+          <div class="face back">
+            <p class="msg">Terima kasih menjadi pewarna dalam hidup aku yang gelap ini. Maaf hanya sekedar Bunga Virtual.</p>
+          </div>
+        </div>
+      </article>
+      <!-- Kartu [2] -->
+      <article class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="face front">
+            <div class="icon">💙</div>
+            <div class="tag">Your Favorite Colour as a Heart</div>
+            <small>Coba klik Hati'nya</small>
+          </div>
+          <div class="face back">
+            <p class="msg">Semoga kamu mendapatkan seseorang yang bisa membimbing hidup kamu jauh lebih baik dari pada aku. Dan semoga, kamu selalu diberikan ketabahan di setiap cobaan yang kamu hadapi <3</p>
+          </div>
+        </div>
+      </article>
+      <!-- Kartu [3] -->
+      <article class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="face front">
+            <div class="icon">🌟</div>
+            <div class="tag">Bintang ter-indah</div>
+            <small>KLIK BINTANG'NYA CO</small>
+          </div>
+          <div class="face back">
+            <p class="msg">Kamu adalah bintang di gelapnya langit malam, selalu terlihat dalam kerumunan.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+    <div class="response-box">
+  <h3>💌 Message Box 💌</h3>
+  <form id="responForm">
+    <input type="text" id="user_name" placeholder="Nama Princess" required>
+    <textarea id="message" placeholder="Tulis sesuatu yang ingin kamu tulis" rows="4" required></textarea>
+    <button type="submit">Kirim</button>
+  </form>
+  <p id="status"></p>
+</div>
+
+
+    <footer>
+      <small>Made with 💙 in silent Night — untuk kamu yang pernah mewarnai hari-hariku.</small>
+    </footer>
+  </main>
+
+  <div id="modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <div class="card">
+        <h2 id="modalTitle" class="title" style="font-size:38px; margin-bottom:6px">💌</h2>
+        <p style="max-width:700px; margin: 0 15 8px; line-height:1.1;">
+          Yah.. Mau dibilang gimanapun perasaan suka ke kamu tuh masih ada. Cuman kali ini mungkin emang harus bener bener dipaksa
+          buat ilang deh. Mungkin emang ya cara aku jahat dan ngebuat kamu kecewa, jujur aku juga bingung mau gimana bilangnya.
+          Di sisi lain aku juga udah cape terus berusaha ngebuat kamu cinta sama aku, di sisi lain juga aku kasian sama kamu yang
+          selalu ngadepin sikap aku yang gajelas, kadang Jealous, Marah, Kasar, dan lainnya. Kalo di pertahanin juga takutnya aku
+          malah menumbuhkan rasa trauma baru di diri kamu. Aku gamau jadi orang yang jahat di kehidupan kamu, tapi kenyataannya...
+          Aku jahat, Aku kasar, Aku gagal untuk selalu nge-treat kamu dengan baik, Aku gagal untuk menjadi pria yang dewasa, Aku...
+          Gagal dalam membimbing & menasihati kamu.<br>
+          Sebenarnya juga aku gamau kaya gini, Aku masih mau tetep ada komunikasi antara kamu dan aku. Aku butuh temen, Aku butuh sosok
+          teman yang benar benar bisa nemenin aku di situasi apapun. Dan itu ada di diri kamu sekarang, entah setelah ini aku harus nyari kemana.
+          Untuk sekarang, aktifitas buruk itulah yang menjadi pelarian aku disaat aku merasa kesepian dan hancur.
+        </p>
+        <div class="cta-wrap">
+          <button id="closeModal" class="btn" type="button">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button id="easterBtn" class="easter" aria-label="Buka pesan rahasia" title="Buka pesan rahasia">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M12 21s-6.4-4.35-9.2-7.15C-0.2 10.85 1 6 5 6c2.1 0 3.3 1.2 4 2 0.7-0.8 1.9-2 4-2 4 0 5.2 4.85 2.2 7.85C18.4 16.65 12 21 12 21z" fill="#8bd3ff" stroke="#4aaae6" stroke-width="1"/>
+    </svg>
+  </button>
+
+  <canvas id="confetti"></canvas>
+
+  <script src="script.js">
+  </script>
+</body>
+</html>
