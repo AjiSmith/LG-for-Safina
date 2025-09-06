@@ -1,7 +1,12 @@
-  const nama = localStorage.getItem("authNama");
-  if (!nama) {
-    window.location.href = "auth.html";
-  }   
+const nama = localStorage.getItem("authNama");
+const aksesTanggal = new Date("2025-09-16");
+const today = new Date();
+today.setHours(0,0,0,0);
+
+if (!nama || today < aksesTanggal) {
+  window.location.href = "auth.html";
+}
+
    
     (function(){
       const c = document.getElementById('starfield');
@@ -130,10 +135,8 @@
     return; 
   }
 
-  // Inisialisasi dengan PUBLIC KEY (string, bukan object)
   emailjs.init("8KD5im2Hi7VbaeZpU");
 
-  // Handle submit form
   document.getElementById("responForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
