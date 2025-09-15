@@ -1,11 +1,3 @@
-const nama = localStorage.getItem("authNama");
-const aksesTanggal = new Date("2025-09-16");
-const today = new Date();
-today.setHours(0,0,0,0);
-
-if (!nama || today < aksesTanggal) {
-  window.location.href = "auth.html";
-}
 
    
     (function(){
@@ -153,3 +145,4 @@ if (!nama || today < aksesTanggal) {
       });
   });
 })();
+
