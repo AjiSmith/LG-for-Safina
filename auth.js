@@ -12,7 +12,7 @@ document.getElementById("authForm").addEventListener("submit", function(event) {
 
   const aksesTanggal = new Date("2025-09-16");
   const today = new Date();
-  today.setHours(0, 0, 0, 0);
+  today.setHours(9, 0, 0, 0);
 
   if (nama === validNama && umur === validUmur && lahir === validLahir) {
     if (today >= aksesTanggal) {
@@ -28,3 +28,4 @@ document.getElementById("authForm").addEventListener("submit", function(event) {
     error.textContent = "kit heart sih aq km lupa sama ultah aq 💔";
   }
 });
+
